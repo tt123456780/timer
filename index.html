@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock - Professional Timer Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Clock</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Professional Time Management Tool</h1>
+            <p>Track your time with precision using our advanced timer system</p>
+        </section>
+
+        <section id="timer" class="timer-section">
+            <div class="timer-container">
+                <div class="timer-type">
+                    <button class="active" onclick="setTimerType('countdown')">Countdown</button>
+                    <button onclick="setTimerType('countup')">Count Up</button>
+                </div>
+                <div class="timer-display">
+                    <input type="text" id="event-name" placeholder="Enter event name">
+                    <div class="time-input">
+                        <input type="number" id="hours" placeholder="HH" min="0" max="99">
+                        <span>:</span>
+                        <input type="number" id="minutes" placeholder="MM" min="0" max="59">
+                        <span>:</span>
+                        <input type="number" id="seconds" placeholder="SS" min="0" max="59">
+                    </div>
+                    <div class="timer-controls">
+                        <button id="start">Start</button>
+                        <button id="pause">Pause</button>
+                        <button id="reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Enter Event Details</h3>
+                    <p>Input your event name and desired time duration</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Choose Timer Type</h3>
+                    <p>Select between countdown or count-up timer</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Control Your Time</h3>
+                    <p>Start, pause, or reset your timer as needed</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Clock</h4>
+                <p>Professional timing solutions for everyone</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: wscoast666@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Clock. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
